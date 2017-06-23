@@ -1,14 +1,23 @@
+【google翻译为基础的自娱自乐文档翻译，欢迎指正】
+
 Onigmo (Oniguruma-mod) Regular Expressions Version 6.1.0    2016/12/25
+Onigmo（Oniguruma-mod）正则表达式版本6.1.0 2016/12/25
 
 syntax: ONIG_SYNTAX_RUBY (default)
+语法：ONIG_SYNTAX_RUBY（默认）
 
 
 1. Syntax elements
+1. 语法元素
 
   \       escape (enable or disable meta character)
+          escape（启用或禁用元字符）
   |       alternation
+          或
   (...)   group
+          组
   [...]   character class
+          字符集合
 
 
 2. Characters

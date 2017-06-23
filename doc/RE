@@ -1,4 +1,9 @@
-【google翻译为基础的自娱自乐文档翻译，欢迎指正】
+【google翻译为基础的自娱自乐文档翻译+笔记，欢迎指正】
+◆一些翻译可以参考英语语法用词，比如character
+◆Unicode分类参考： http://www.unicode.org/reports/tr44/
+●位置元字符：^ 、$，\b【对英语更加有用些，汉语不讲究空格，但可以用在一些标点符号上，比如\b……\b】
+●字符元字符：.【任我行】、\w【文字：字母、数字、下划线和汉字】、\W、\s【空间纠缠：空格、制表符、换行符等】、\S 、\d【数字】 、\D ➟Onigmo特有的\h、\\H
+
 
 Onigmo (Oniguruma-mod) Regular Expressions Version 6.1.0    2016/12/25
 Onigmo（Oniguruma-mod）正则表达式版本6.1.0 2016/12/25
@@ -11,11 +16,11 @@ syntax: ONIG_SYNTAX_RUBY (default)
 1. 语法元素
 
   \       escape (enable or disable meta character)
-          escape（启用或禁用元字符）
+          转义（启用或禁用元字符）
   |       alternation
           或
   (...)   group
-          组
+          组【或者“类”？】
   [...]   character class
           字符集合
 
@@ -23,14 +28,23 @@ syntax: ONIG_SYNTAX_RUBY (default)
 2. Characters
 
   \t           horizontal tab         (0x09)
+               水平制表符
   \v           vertical tab           (0x0B)
+               垂直制表符
   \n           newline (line feed)    (0x0A)
+               换行符
   \r           carriage return        (0x0D)
+               回车符
   \b           backspace              (0x08)
+               退格？单词边界？
   \f           form feed              (0x0C)
+               换页符
   \a           bell                   (0x07)
+               响铃符
   \e           escape                 (0x1B)
+               ASCII 转义符
   \nnn         octal char             (encoded byte value)
+               八进制定长字符？【 “n为八进制数字(0-3)，且m和l均为八进制数字 (0-7)”？】
   \xHH         hexadecimal char       (encoded byte value)
   \x{7HHHHHHH} wide hexadecimal char  (character code point value)
   \uHHHH       wide hexadecimal char  (character code point value)

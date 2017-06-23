@@ -2,7 +2,7 @@
 ◆一些翻译可以参考英语语法用词，比如character
 ◆Unicode分类参考： http://www.unicode.org/reports/tr44/
 ●位置元字符：^ 、$，\b【对英语更加有用些，汉语不讲究空格，但可以用在一些标点符号上，比如\b……\b】
-●字符元字符：.【任我行】、\w【文字：字母、数字、下划线和汉字】、\W、\s【空间纠缠：空格、制表符、换行符等】、\S 、\d【数字】 、\D ➟Onigmo特有的\h、\\H
+●字符元字符：.【任我行】、\w【文字：字母、数字、下划线和汉字】、\W、\s【空间纠缠：空格、制表符、换行符等】、\S 、\d【数字】 、\D ➟Onigmo特有的\h、\H
 
 
 Onigmo (Oniguruma-mod) Regular Expressions Version 6.1.0    2016/12/25
